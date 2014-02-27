@@ -55,8 +55,12 @@ setopt autocd
 # turn off autocorrect
 unsetopt correct_all
 
+# set PATH
 export JAVA_HOME="/opt/java/jdk/current"
 export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$HOME/.cask/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# alias some commands
+alias tmux="tmux -2"
