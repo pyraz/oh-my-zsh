@@ -26,7 +26,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="tw-agnoster"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -61,5 +61,8 @@ export PATH="$JAVA_HOME/bin:$PATH"
 export PATH="$HOME/.cask/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# set Solarized dircolors
+eval `dircolors ~/.dircolors`
 
 # alias some commands
