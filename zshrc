@@ -53,7 +53,7 @@ source $ZSH/oh-my-zsh.sh
 setopt autocd
 
 # turn off autocorrect
-unsetopt correct_all
+# unsetopt correct_all
 
 # initialize rbenv
 eval "$(rbenv init -)"
@@ -62,3 +62,8 @@ eval "$(rbenv init -)"
 eval `dircolors ~/.dircolors`
 
 # alias some commands
+
+# make terminal behave like vim
+bindkey -v
+bindkey -M viins 'jj' vi-cmd-mode
+bindkey '^R' history-incremental-search-backward
