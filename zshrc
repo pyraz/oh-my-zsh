@@ -1,3 +1,24 @@
+# source bash profile.d
+# (to disable a profile, just remove execute permission on it)
+for profile in /etc/profile.d/*.sh; do
+  if [ -x $profile ]; then
+    . $profile
+  fi
+done
+unset profile
+
+export JAVA_HOME="/opt/java/jdk/current"
+export GOPATH="$HOME/workspace/gospace"
+export GOROOT="/usr/local/go"
+export GOBIN="/usr/local/go/bin"
+
+# set PATH
+PATH="$JAVA_HOME/bin:$PATH"
+PATH="$GOBIN:$PATH"
+PATH="$HOME/.cask/bin:$PATH"
+PATH="$HOME/.rbenv/bin:$PATH"
+PATH="$HOME/.rbenv/shims:$PATH"
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -28,14 +49,11 @@ plugins=(git ruby rails bundler rake gem heroku)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-#
-
 # automatically cd to folders
 setopt autocd
 
 # turn off autocorrect
-unsetopt correct_all
+# unsetopt correct_all
 
 # initialize rbenv
 eval "$(rbenv init -)"
@@ -44,3 +62,8 @@ eval "$(rbenv init -)"
 eval `dircolors ~/.dircolors`
 
 # alias some commands
+
+# make terminal behave like vim
+bindkey -v
+bindkey -M viins 'jj' vi-cmd-mode
+bindkey '^R' history-incremental-search-backward
