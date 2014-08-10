@@ -8,13 +8,13 @@ done
 unset profile
 
 export JAVA_HOME="/opt/java/jdk/current"
-export GOPATH="$HOME/workspace/gospace"
+export GOPATH="$HOME/gospace"
 export GOROOT="/usr/local/go"
-export GOBIN="/usr/local/go/bin"
+export GOBIN="$GOPATH/bin"
 
 # set PATH
 PATH="$JAVA_HOME/bin:$PATH"
-PATH="$GOBIN:$PATH"
+PATH="$GOBIN:$PATH:$GOROOT/bin"
 PATH="$HOME/.cask/bin:$PATH"
 PATH="$HOME/.rbenv/bin:$PATH"
 PATH="$HOME/.rbenv/shims:$PATH"
