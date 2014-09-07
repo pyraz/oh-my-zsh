@@ -63,7 +63,5 @@ eval `dircolors ~/.dircolors`
 
 # alias some commands
 
-# make terminal behave like vim
-bindkey -v
-bindkey -M viins 'jj' vi-cmd-mode
-bindkey '^R' history-incremental-search-backward
+# fix keys
+xmodmap ~/Xmodmap
