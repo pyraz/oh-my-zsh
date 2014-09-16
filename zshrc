@@ -26,7 +26,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="tw-agnoster"
+ZSH_THEME="arrow"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -45,7 +45,7 @@ ZSH_THEME="tw-agnoster"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby rails bundler rake gem heroku)
+plugins=(ruby rails bundler rake gem heroku)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,4 +64,4 @@ eval `dircolors ~/.dircolors`
 # alias some commands
 
 # fix keys
-xmodmap ~/Xmodmap
+# xmodmap ~/Xmodmap
