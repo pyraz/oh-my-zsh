@@ -45,7 +45,7 @@ ZSH_THEME="arrow"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ruby rails bundler rake gem heroku)
+plugins=(git ruby rails bundler rake gem heroku)
 
 source $ZSH/oh-my-zsh.sh
 
